@@ -1,0 +1,42 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+.next,
+.previous {
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+}
+.next {
+  right: 50px;
+  top: 40%;
+}
+.previous {
+  left: 50px;
+  top: 40%;
+}
+.fa-chevron-right {
+  font-size: 70px;
+  cursor: pointer;
+}
+.fa-chevron-left {
+  font-size: 70px;
+  cursor: pointer;
+}
+.img-slider {
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+}
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 18px;
+  color: #fff;
+}

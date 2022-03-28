@@ -1,0 +1,17 @@
+.APropos img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 881px) {
+  .APropos img {
+    height: 223px;
+  }
+}

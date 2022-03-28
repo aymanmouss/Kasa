@@ -1,0 +1,42 @@
+.hero {
+  background-image: url("../../assets/hero.png");
+  width: 100%;
+  height: 223px;
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.255);
+}
+.hero_text {
+  font-size: 48px;
+  color: #ffff;
+  position: absolute;
+}
+@media only screen and (max-width: 772px) {
+  .hero_text {
+    font-size: 29px;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .hero {
+    height: 111px;
+  }
+  .hero_text {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 342px) {
+  .hero_text {
+    font-size: 16px;
+  }
+}

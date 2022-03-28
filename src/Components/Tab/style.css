@@ -1,0 +1,27 @@
+.tab {
+  width: 100%;
+  font-size: 24px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 5px;
+  max-height: 47px;
+  cursor: pointer;
+}
+.openTab {
+  padding: 20px 20px;
+  margin-top: 0px;
+  background-color: #f7f7f7;
+  color: #ff6060;
+  border-radius: 5px;
+}
+.displaynone {
+  display: none;
+}

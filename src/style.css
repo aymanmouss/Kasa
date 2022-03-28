@@ -1,0 +1,18 @@
+body {
+  margin: 40px 100px;
+}
+@media only screen and (max-width: 877px) {
+  body {
+    margin: 40px 70px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  body {
+    margin: 40px 50px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  body {
+    margin: 40px 15px;
+  }
+}
