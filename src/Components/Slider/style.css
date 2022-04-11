@@ -40,3 +40,26 @@
   font-size: 18px;
   color: #fff;
 }
+@media only screen and (max-width: 380px) {
+  .img-slider {
+    height: 50%;
+  }
+  .fa-chevron-right,
+  .fa-chevron-left {
+    font-size: 40px;
+  }
+  .previous {
+    left: 30px;
+    top: 35%;
+  }
+  .next {
+    right: 30px;
+    top: 35%;
+  }
+}
+@media only screen and (max-width: 260px) {
+  .fa-chevron-right,
+  .fa-chevron-left {
+    font-size: 20px;
+  }
+}

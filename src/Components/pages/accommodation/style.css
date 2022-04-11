@@ -3,7 +3,9 @@
   color: #ff6060;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 .accTitle {
   font-size: 36px;
 }
@@ -30,11 +32,13 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .tags {
   display: flex;
   flex-direction: row;
   color: #fff;
+  flex-wrap: wrap;
 }
 .tag {
   background-color: #ff6060;
@@ -55,6 +59,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .accTab {
   max-width: 582px;
 }
@@ -66,5 +71,14 @@
   .accTabs,
   .tab {
     flex-wrap: wrap;
+  }
+  .accTabs,
+  .tab:nth-child(1) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 240px) {
+  .accTitle {
+    font-size: 25px;
   }
 }

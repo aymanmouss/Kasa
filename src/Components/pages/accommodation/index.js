@@ -12,13 +12,10 @@ function Accommodation({ width, title, tabText, picture }) {
     return acc.id === id;
   });
   const equipements = () => {
-    return accommodation.equipments.map((item, index) => {
+    return accommodation.equipments.map((item) => {
       return (
         <>
-          <span key={index} className='item'>
-            {item}
-          </span>{" "}
-          <br />
+          <span className='item'>{item}</span> <br />
         </>
       );
     });
