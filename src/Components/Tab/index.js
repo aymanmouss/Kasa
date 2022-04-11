@@ -20,7 +20,7 @@ function Tab({ title, tabText, width }) {
         <i className={collapsIcon}></i>
       </div>
       <div className={`${display} openTab`}>
-        <p className='tabText'>{tabText}</p>
+        <div className='tabText'>{tabText}</div>
       </div>
     </div>
   );

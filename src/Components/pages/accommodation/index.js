@@ -12,11 +12,11 @@ function Accommodation({ width, title, tabText, picture }) {
     return acc.id === id;
   });
   const equipements = () => {
-    return accommodation.equipments.map((item) => {
+    return accommodation.equipments.map((item, index) => {
       return (
-        <>
+        <div key={index}>
           <span className='item'>{item}</span> <br />
-        </>
+        </div>
       );
     });
   };
@@ -40,8 +40,12 @@ function Accommodation({ width, title, tabText, picture }) {
       </div>
       <div className='tags-rating'>
         <div className='tags'>
-          {accommodation.tags.map((tag) => {
-            return <p className='tag'>{tag}</p>;
+          {accommodation.tags.map((tag, index) => {
+            return (
+              <p className='tag' key={index}>
+                {tag}
+              </p>
+            );
           })}
         </div>
         <Ratings value={Number(accommodation.rating)} />

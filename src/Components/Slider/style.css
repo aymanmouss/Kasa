@@ -40,14 +40,20 @@
   font-size: 18px;
   color: #fff;
 }
+@media only screen and (max-width: 700px) {
+  .img-slider {
+    height: 235px;
+  }
+  .fa-chevron-right,
+  .fa-chevron-left {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 380px) {
   .img-slider {
     height: 50%;
   }
-  .fa-chevron-right,
-  .fa-chevron-left {
-    font-size: 40px;
-  }
+
   .previous {
     left: 30px;
     top: 35%;

@@ -1,12 +1,28 @@
 import React from "react";
-function getStar(value) {
+function getStar(value, index) {
   switch (value) {
     case 0:
-      return <i class='fa-solid fa-star' style={{ color: "#E3E3E3" }}></i>;
+      return (
+        <i
+          className='fa-solid fa-star'
+          key={index}
+          style={{ color: "#E3E3E3" }}
+        ></i>
+      );
     case 1:
-      return <i class='fa-solid fa-star' style={{ color: "#FF6060" }}></i>;
+      return (
+        <i
+          className='fa-solid fa-star'
+          key={index}
+          style={{ color: "#FF6060" }}
+        ></i>
+      );
     default:
-      <i class='fa-solid fa-star' style={{ color: "#E3E3E3" }}></i>;
+      <i
+        className='fa-solid fa-star'
+        key={index}
+        style={{ color: "#E3E3E3" }}
+      ></i>;
   }
 }
 // function getStars(value) {
@@ -36,8 +52,8 @@ function getStars(value) {
 function Ratings({ value }) {
   return (
     <div className='rating'>
-      {getStars(value).map((value) => {
-        return getStar(value);
+      {getStars(value).map((value, index) => {
+        return getStar(value, index);
       })}
     </div>
   );

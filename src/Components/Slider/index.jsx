@@ -14,10 +14,10 @@ function Slider({ picture }) {
     <div className='slider'>
       <img className='img-slider' src={picture[slide]} alt='Appartement' />
       <p className='previous' onClick={() => Previous(setSlide, slide)}>
-        <i class='fa-solid fa-chevron-left'></i>
+        <i className='fa-solid fa-chevron-left'></i>
       </p>
       <p className='next' onClick={() => Next(setSlide, slide)}>
-        <i class='fa-solid fa-chevron-right'></i>
+        <i className='fa-solid fa-chevron-right'></i>
       </p>
       <p className='pagination'>
         {slide + 1}/{picture.length}

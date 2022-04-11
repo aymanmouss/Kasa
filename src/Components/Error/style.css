@@ -5,14 +5,14 @@
 }
 .error-404 {
   font-family: "Montserrat";
-  font-size: 288px;
+  font-size: clamp(40px, 20vw, 288px);
   text-align: center;
   margin: 15px auto;
   font-weight: 700;
   color: #ff6060;
 }
 .error-Message {
-  font-size: 36px;
+  font-size: clamp(20px, 4vw, 36px);
   color: #ff6060;
   text-align: center;
 }
